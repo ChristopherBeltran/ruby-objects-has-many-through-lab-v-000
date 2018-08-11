@@ -21,7 +21,7 @@ app
   end
   
 def appointments
-  @appointments.select do |app|
+  Appointment.all.select do |app|
     app.doctor == self
   end 
   end
