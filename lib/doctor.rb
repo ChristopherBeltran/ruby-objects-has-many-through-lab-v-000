@@ -27,7 +27,7 @@ def appointments
   end
   
 def patients
-  appointments.select do |app|
+  appointments.map do |app|
     app.patient
   end
 end 
